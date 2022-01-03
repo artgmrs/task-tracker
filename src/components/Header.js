@@ -1,14 +1,23 @@
+import PropTypes from 'prop-types'
+
+import Button from './Button'
+
 // 'rafce' snippet
 const Header = ({ title }) => {
     return (
-        <div>
-            <h1>Task tracker {title} </h1>
-        </div>
+        <header className='header'>
+            <h1>{title}</h1>
+            <Button color='green' text='Hello'></Button>
+        </header>
     )
 }
 
 Header.defaultProps = {
     title: 'Task Tracker xD',
+}
+
+Header.propTypes = {
+    title: PropTypes.string,
 }
 
 export default Header
