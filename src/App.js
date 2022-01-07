@@ -30,17 +30,11 @@ function App() {
     };
 
     const toggleReminder = (id) => {
-        // const newTasks = [...tasks];
-        // newTasks[id - 1] = { reminder: reminder === true ? false : true }
-        // setTasks(newTasks);
         setTasks(tasks.map((task) => 
             task.id === id 
             ? {...task, reminder: !task.reminder}
             : task
         ))
-
-        // let task = tasks.findIndex((task => task.id === id));
-        // console.log(id);
     }
 
     return (
