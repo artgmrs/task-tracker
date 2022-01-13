@@ -1,11 +1,7 @@
 const Button = (props) => {
-    const onClick = (e) => {
-        console.log(e);
-    }
-    
     return (
         <button
-            onClick={onClick}
+            onClick={props.onAdd}
             style={{
                 backgroundColor: props.color,
             }}
